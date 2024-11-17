@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const audio = document.getElementById('background-music');
+
+  // Wait until the audio is fully loaded to adjust volume
+  audio.addEventListener('canplay', function() {
+    audio.volume = 0.5; 
+  });
+
+
   var angle;
   var theta = 0,
     frms = 580,
