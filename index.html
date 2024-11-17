@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Lewis Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1>Grace Lewis</h1>
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+    </div>
+    <nav class="header-right">
+      <div class="social-icons">
+        <a href="mailto:gracelewis0202@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/gracelewiss" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gracelewiss/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-section" id="home">
+        <div class="animation-container">
+            <canvas id="fractalTree"></canvas> 
+          </div>
+        <h3 class="typing-animation">
+          <span>hi,</span><span class="name"> grace</span><span> here.</span>
+        </h3>
+        <p class="description">I'm a computer engineer currently based in Salt Lake City, Utah.</p>
+      </section>
+      
+      
+
+    <section id="about" class="fade-in">
+      <h3>/about me</h3>
+      <p>
+        I am currently pursuing a <span class="bold-text">Master's of Science</span> in <span class="bold-text"> Computer Science</span> at <span class="highlight">the University of Utah</span>. I am passionate about expanding my knowledge and expertise in Data Analytics, Visualization, and Cybersecurity.
+</p>
+    <p>Here are some technologies I have currently been working with:</p>
+    <ul class="tech-list">
+        <li class="tech-item">Python</li>
+        <li class="tech-item">React.js</li>
+        <li class="tech-item">Java</li>
+        <li class="tech-item">JavaScript</li>
+        <li class="tech-item">C++</li>
+      </ul>
+    <p>Outside of work and school, I enjoy playing basketball and travelling.</p>
+    </section>
+
+    <section id="experience" class="fade-in">
+      <h3>/experience</h3>
+      <ul>
+        <li>Project Development Intern at ITECH DIGITAL FORENSICS (June 2022 - August 2022)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h3>/projects</h3>
+      <ul>
+        <li>FortiShare: A Predictive Cloud File Sharing System for Detecting Intrusions, DBIT	July 2023 – May 2024 Tools Used: MongoDB GridFS, Python, NodeJS, HTML, PHP
+            Developed a cloud-based file sharing system using AES and RSA encryption, enhancing data security.
+            Optimized encryption results with image encryption time as low as 0.128 seconds, ranging up to 13.125 seconds for videos in GB, enhancing data security without compromising speed.
+            Implemented vulnerability detection and threat prediction using Convolutional Neural Networks (CNN), detecting XSS attacks with an accuracy of 98.5%.
+            </li>
+        <li>SafeU: SOS Android Based Application, DBIT	August 2021 – May 2022
+            Developed the SafeU Android app using Java and Android Studio, featuring automated SOS alerts, real-time location sharing, and discreet audio recording, improving user safety and response time by 30%.
+            Designed a user-friendly interface with Figma and integrated Google Maps API for live location tracking, allowing users to send updates every 3, 5, or 10 minutes, enhancing emergency response effectiveness by 40%.
+            </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
