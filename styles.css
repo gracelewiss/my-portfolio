@@ -128,4 +128,38 @@ section {
     margin-top: 1rem;
 }
 
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+.pdf-icon {
+    font-size: 4rem;
+    color: #64FFDA; 
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.pdf-icon:hover {
+    transform: scale(1.1);
+}
+
+.bold-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #A8B2D1; 
+    transition: color 0.3s;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.bold-text:hover {
+    color: #64FFDA; 
+}
+
+.resume-container a {
+    text-decoration: none; 
+}
