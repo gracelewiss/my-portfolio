@@ -1,0 +1,65 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#experience, #projects {
+    margin-top: 2rem;
+}
+
+#experience h3, #projects h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #CCD6F6;
+}
+
+#experience li {
+    transition: transform 0.3s ease;
+}
+
+#experience li:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+ul li ul li {
+    margin-top: 0.5rem;
+}
+
+ul li strong {
+    font-size: 1.2rem;
+    color: #64FFDA;
+}
+
+.list {
+    position: relative;
+    padding-left: 20px;
+}
+
+.list::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #64FFDA;
+    background-color: #0A192F;
+}

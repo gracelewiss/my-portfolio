@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grace Lewis Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-about.css">
+  <link rel="stylesheet" href="styles-project.css">
+  <link rel="stylesheet" href="styles-experience.css">
+  <link rel="stylesheet" href="styles-publication.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <audio id="background-music" autoplay loop>
-    <source src="path/to/your-audio-file.mp3" type="audio/mp3">
-    <source src="path/to/your-audio-file.ogg" type="audio/ogg">
+    <source src="audio/audio.mp3" type="audio/mp3">
+    <source src="audio/audio.ogg" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
 
@@ -45,26 +49,35 @@
       
       
 
-    <section id="about" class="fade-in">
-      <h3>/about me</h3>
-      <p>
-        I am currently pursuing a <span class="bold-text">Master's of Science</span> in <span class="bold-text"> Computer Science</span> at <span class="highlight">the University of Utah</span>. I am passionate about expanding my knowledge and expertise in Data Analytics, Visualization, and Cybersecurity.
-</p>
-    <p>Here are some technologies I have currently been working with:</p>
-    <ul class="tech-list">
-        <li class="tech-item">Python</li>
-        <li class="tech-item">React.js</li>
-        <li class="tech-item">Java</li>
-        <li class="tech-item">JavaScript</li>
-        <li class="tech-item">C++</li>
-      </ul>
-    <p>Outside of work and school, I enjoy playing basketball and travelling.</p>
+      <section id="about" class="fade-in">
+        <div class="about-container">
+            <div class="about-text">
+                <h3>/about me</h3>
+                <p>
+                    I am currently pursuing a <span class="bold-text">Master's of Science</span> in <span class="bold-text"> Computer Science</span> at <span class="highlight">the University of Utah</span>. I am passionate about expanding my knowledge and expertise in Data Analytics, Visualization, and Cybersecurity.
+                </p>
+                <p>Here are some technologies I have currently been working with:</p>
+                <ul class="tech-list">
+                    <li class="tech-item">Python</li>
+                    <li class="tech-item">React.js</li>
+                    <li class="tech-item">Java</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">C++</li>
+                </ul>
+                <p>Outside of work and school, I enjoy playing basketball and travelling.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/my-picture.png" alt="my picture" />
+            </div>
+        </div>
     </section>
+    
 
     <section id="experience" class="fade-in">
       <h3>/experience</h3>
       <ul>
-        <li><strong>Project Development Intern at ITECH DIGITAL FORENSICS</strong> (June 2022 - August 2022)
+        <li><strong><span class="bold-text">Project Development Engineer Intern</span> <span class="highlight">@ ITECH DIGITAL FORENSICS</span></strong>
+        <li> June 2022 - August 2022 </li>
           <ul>
             <li class="list">Contributed to the development of cutting-edge digital forensics solutions, optimizing data security protocols for clients.</li>
             <li class="list">Collaborated with cross-functional teams to design and implement digital evidence collection tools that reduced analysis time by 25%.</li>
@@ -98,8 +111,15 @@
         </li>
       </ul>
     </section>
+
+    <section id = "skills" class = "fade-in">
+      <h3>/skills</h3>
+      <svg width="1180.65625" height="589.328125" version="1.1" xmlns="http://www.w3.org/2000/svg"><g transform="translate(590.328125,294.6640625)"><text text-anchor="middle" transform="translate(-70, -144)" style="font-size: 70px; user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">data</text><text text-anchor="middle" transform="translate(-210, -60)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">analysis</text><text text-anchor="middle" transform="translate(55, -31)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">python</text><text text-anchor="middle" transform="translate(-223, -1)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">mysql</text><text text-anchor="middle" transform="translate(-274, -134)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">mongodb</text><text text-anchor="middle" transform="translate(-342, 29)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">visualization</text><text text-anchor="middle" transform="translate(114, -73)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">power</text><text text-anchor="middle" transform="translate(153, -94)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(100, 255, 218);">bi</text><text text-anchor="middle" transform="translate(-107, 26)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">tableau</text><text text-anchor="middle" transform="translate(82, -48)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">web</text><text text-anchor="middle" transform="translate(127, -134)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">development</text>\<text text-anchor="middle" transform="translate(48, 59)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">html</text><text text-anchor="middle" transform="translate(-44, -3)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">css</text><text text-anchor="middle" transform="translate(100, 83)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">javascript</text><text text-anchor="middle" transform="translate(-236, 61)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(204, 214, 246);">php</text><text text-anchor="middle" transform="translate(152, 63)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">bootstrap</text><text text-anchor="middle" transform="translate(215, -105)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">ms</text><text text-anchor="middle" transform="translate(-151, -29)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">office</text><text text-anchor="middle" transform="translate(-224, -29)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">autocad</text><text text-anchor="middle" transform="translate(-1, 113)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">microsoft</text><text text-anchor="middle" transform="translate(10, -106)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">azure</text><text text-anchor="middle" transform="translate(-69, -89)" style="user-select: none; cursor: default; font-family: Montserrat; fill: rgb(136, 146, 176);">aws</text></g></svg>
+      </section>
   </main>
 
   <script src="script.js"></script>
+  <script src="script-fractalTree.js"></script>
+  <script src="script-project.js"></script>
 </body>
 </html>
