@@ -15,6 +15,3 @@ This is my personal portfolio website, built with **JavaScript**, **HTML**, and 
 ## Live Demo
 You can check out the live version of the portfolio here: [Grace Lewis Portfolio](https://gracelewis.netlify.app/)
 
-## License
-This project is open-source and available under the MIT License.
-
