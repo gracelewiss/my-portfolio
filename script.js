@@ -1,16 +1,21 @@
 document.querySelectorAll('.header-right a').forEach(link => {
   link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').slice(1);
-    const targetElement = document.getElementById(targetId);
+    const href = this.getAttribute('href');
+    
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const targetId = href.slice(1);
+      const targetElement = document.getElementById(targetId);
 
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
-      });
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
     }
   });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const fadeElements = document.querySelectorAll('.fade-in');

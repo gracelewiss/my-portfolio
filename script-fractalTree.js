@@ -8,7 +8,8 @@
   
   function resizeCanvas() {
     canvas.width = window.innerWidth;  // Set canvas width to window width
-    canvas.height = 300;  // Adjust for the browser's bottom margin
+    canvas.height = canvas.parentElement.offsetHeight;
+  // Adjust for the browser's bottom margin
   }
   
   function setup() {

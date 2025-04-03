@@ -4,6 +4,7 @@ body {
     background-color: #0A192F;
     color: #CCD6F6;
     line-height: 1.6;
+    padding: 0 2rem;
 }
 
 h1, h2, h3 {
@@ -11,20 +12,25 @@ h1, h2, h3 {
 }
 
 main {
-    padding: 3rem;
+    padding: 3rem 5rem;
 }
 
+/* Header Styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem;
+    padding: 1.5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #0A192F;
+    background-color: rgba(10, 25, 47, 0.9); /* Added slight transparency for better UI */
+    backdrop-filter: blur(5px); /* Soft blur effect */
 }
 
+
+
+/* Navigation Styling */
 .header-left {
     display: flex;
     align-items: center;
@@ -40,22 +46,26 @@ main {
     margin: 0 1rem;
     text-decoration: none;
     color: #CCD6F6;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .header-left a:hover {
     color: #64FFDA;
 }
 
+/* Social Icons */
 .social-icons a {
     margin-left: 1rem;
     color: #CCD6F6;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
     color: #64FFDA;
+    transform: scale(1.1);
 }
 
+/* Typing Animation */
 .typing-animation {
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
@@ -65,8 +75,8 @@ main {
     overflow: hidden;
     border-right: 3px solid #64FFDA;
     animation: typing 3.5s steps(20) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
-    position: center;
-    margin-top: -70px;
+    text-align: center;
+    margin-top: -50px; /* Adjusted spacing */
 }
 
 .typing-animation span {
@@ -77,6 +87,7 @@ main {
     color: #64FFDA;
 }
 
+/* Keyframes */
 @keyframes typing {
     from {
         width: 0;
@@ -92,28 +103,37 @@ main {
     }
 }
 
+/* Section Styling */
 section {
-    padding: 3rem 2rem;
+    padding: 3rem 5rem;
 }
 
 .home-section {
     text-align: center;
-    padding-top: 50px;
-}
-
-.animation-container {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
-    position: relative;
+    padding: 50px 5rem
 }
 
 #fractalTree {
+    position: absolute !important;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: block;
-}
+    z-index: -1 !important;
+    pointer-events: none !important;
+  }
+  
+  .animation-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
 
+
+/* Bounce Effect */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -123,43 +143,62 @@ section {
     }
 }
 
+/* Description Text */
 .description {
     color: #8892B0;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
+/* Resume Section */
 .resume-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .pdf-icon {
     font-size: 4rem;
-    color: #64FFDA; 
+    color: #64FFDA;
     margin-bottom: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .pdf-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
+/* Bold Text */
 .bold-text {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #A8B2D1; 
-    transition: color 0.3s;
+    color: #A8B2D1;
+    transition: color 0.3s ease-in-out;
     margin-top: 10px;
     letter-spacing: 0.5px;
 }
 
 .bold-text:hover {
-    color: #64FFDA; 
+    color: #64FFDA;
 }
 
+/* Resume Link */
 .resume-container a {
-    text-decoration: none; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5rem;
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    color: #64FFDA;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.resume-container a:hover {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
