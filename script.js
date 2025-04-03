@@ -50,4 +50,28 @@ document.addEventListener('DOMContentLoaded', function () {
       audio.play(); 
     }
   }
+  const musicToggle = document.getElementById('music-toggle');
+
+if (musicToggle && audio) {
+  const icon = musicToggle.querySelector('i');
+  let isPlaying = false;
+
+  musicToggle.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent jumping
+
+    if (isPlaying) {
+      audio.pause();
+      icon.classList.remove('fa-pause');
+      icon.classList.add('fa-play');
+    } else {
+      audio.muted = false;
+      audio.play();
+      icon.classList.remove('fa-play');
+      icon.classList.add('fa-pause');
+    }
+
+    isPlaying = !isPlaying;
+  });
+}
+
 });
