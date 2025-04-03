@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 120px; /* adjust based on your header height */
+  }
+  
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -107,6 +111,7 @@ main {
 section {
     padding: 3rem 5rem;
 }
+
 
 .home-section {
     text-align: center;

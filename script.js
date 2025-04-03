@@ -20,7 +20,7 @@ document.querySelectorAll('.header-right a').forEach(link => {
 document.addEventListener('DOMContentLoaded', function () {
   const fadeElements = document.querySelectorAll('.fade-in');
   const options = {
-    threshold: 0.5 
+    threshold: 0.2 
   };
 
   const observer = new IntersectionObserver((entries) => {

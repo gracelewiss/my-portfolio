@@ -74,13 +74,16 @@ li {
 }
 
 #about {
+    min-height: calc(100vh - 120px); /* accounts for header + scroll padding */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3rem 5rem 2rem 5rem;
     align-items: center;
-    padding: 3rem 5rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
+
 
 .about-container {
     display: flex;
