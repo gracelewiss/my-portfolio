@@ -207,3 +207,43 @@ section {
     color: #0A192F;
 }
 
+#quotes {
+    margin-top: 2rem;
+    padding: 3rem 5rem;
+  }
+  
+  #quotes h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #CCD6F6;
+  }
+  
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .quote-card {
+    border-left: 3px solid #64FFDA;
+    padding-left: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: translateX(5px);
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #A8B2D1;
+  }
+  
+  .quote-author {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64FFDA;
+  }
+  
