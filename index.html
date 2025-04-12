@@ -99,92 +99,77 @@
     </section>
     
     <section id="projects" class="fade-in">
-      <h3 class="project">/projects</h3>
-
-      <br> 
-
-      <ul>
-        <li>
-          <strong><span class="bold-text">Integrated Hybrid Cleaning System (IHCS)</span> <span class="highlight">Tools: Python, MLN, Tuffy, PostgreSQL</span></strong>
-          <li> January 2025 – Present </li>
-          <ul>
-            <li class="list">Developed a hybrid data cleaning system using Markov Logic Networks (MLN) and Tuffy to handle unstructured and structured datasets.</li>
-            <li class="list">Focused on automating the error detection and repair process</li>
-            <li class="list">Integrated machine learning with logical rules to improve accuracy and flexibility in data cleaning.</li>
-            <li class="list">Currently building on a custom error detection framework tailored to real-world datasets for improved data quality.</li>
-          </ul>
-        </li>
-        <br>
-        <li>
-          <strong><span class="bold-text">Glacier Visualization: Climate Change Analysis</span> <span class="highlight">Tools: ParaView, Python, FFmeg</span></strong>
-          <li> February 2025 – April 2025 </li>
-          <ul>
-            <li class="list">Visualized glacier data trends over time to study the effects of climate change using ParaView for 3D rendering.</li>
-            <li class="list">Integrated time-varying data to create visual representations of glacier shrinkage and temperature fluctuations.</li>
-            <li class="list">Analyzed the impact of climate change on glaciers over multiple decades, with detailed 3D models and visual outputs for further research.</li>
-          </ul>
-        </li>
-        <br>
-        <li>
-          <strong><span class="bold-text">Job Market Visual Analytics Tool</span> <span class="highlight">Tools: D3.js, JavaScript, HTML/CSS</span></strong>
-          <li> October 2024 – December 2024 </li>
-          <ul>
-            <li class="list">Analyzed job opportunities across industries and states, comparing them to student academic profiles at the University of Utah.</li>
-            <li class="list">Built interactive charts such as bar graphs and heatmaps to visualize oversaturation and salary trends across regions and professions.</li>
-            <li class="list">Enabled user filters by major, industry, location, and academic year to support informed career decisions.</li>
-          </ul>
-        </li>
+      <h3 class="project-title">/projects</h3>
+      <div class="project-grid">
     
-        <br>
+        <div class="project-card">
+          <div class="card-icons">
+            <i class="far fa-folder folder-icon"></i></i>
+          </div>
+          <h4 class="project-name">Integrated Hybrid Cleaning System (IHCS)</h4>
+          <p class="project-tools">Python, MLN, Tuffy, PostgreSQL</p>
+          <p class="project-desc">Built a hybrid data cleaning system using MLN and Tuffy for structured/unstructured data. Focused on automating error detection and repair, combining machine learning with logical rules.</p>
+        </div>
+        
     
-        <li>
-          <strong><span class="bold-text">My Portfolio Website</span> <span class="highlight">Tools: JavaScript, HTML, CSS, Netlify</span></strong>
-          <li> October 2024 – November 2024 </li>
-          <ul>
-            <li class="list">Built and deployed a responsive personal portfolio website to showcase skills, projects, and experience.</li>
-            <li class="list">Created a fractal tree animation on the home page using a recursive JavaScript algorithm for dynamic visual appeal.</li>
-            <li class="list">Designed smooth transitions and layout sections for Home, About, Experience, Projects, and Contact.</li>
-          </ul>
-        </li>
-
-        <br>
-
-        <li>
-          <strong><span class="bold-text">FortiShare: A Predictive Cloud File Sharing System</span> <span class="highlight">Tools: MongoDB GridFS, Python, NodeJS, HTML, PHP</span></strong>
-          <li> July 2023 – May 2024 </li>
-          <ul>
-            <li class="list">Developed a cloud-based file-sharing system leveraging AES and RSA encryption to secure files during storage and transfer.</li>
-            <li class="list">Optimized encryption algorithms, achieving image encryption times as low as 0.128 seconds and video encryption scaling up to 13.125 seconds for GB-sized files.</li>
-            <li class="list">Implemented a predictive model using Convolutional Neural Networks (CNN), achieving 98.5% accuracy in detecting XSS attacks.</li>
-            <li class="list">Collaborated with UI/UX designers to design an intuitive file management interface, reducing user task time by 15%.</li>
-            <li class="list">Tools used: MongoDB GridFS, Python, NodeJS, HTML, PHP.</li>
-          </ul>
-        </li>
-        <br>
-        <br>
-
-        <li>
-          <strong><span class="bold-text">Static Code Analyzer VS Code Extension</span> <span class="highlight">Tools: TypeScript, Node.js, Python, VS Code API</span></strong>
-          <li> August 2022 – May 2023 </li>
-          <ul>
-            <li class="list">Developed a VS Code extension that analyzes Python files and highlights style or logic errors using a custom static code analyzer.</li>
-            <li class="list">Implemented inline diagnostics with squiggly lines and hover messages to improve developer productivity and code quality.</li>
-            <li class="list">Packaged and published the extension with custom branding, ready for deployment on the Visual Studio Code Marketplace.</li>
-          </ul>
-        </li>
-
-        <br>
-        <li>
-          <strong><span class="bold-text">SafeU: SOS Android-Based Application</span> <span class="highlight">Tools: Java, Android Studio, Google Maps API, Figma</span></strong>
-          <li> August 2021 – May 2022 </li>
-          <ul>
-            <li class="list">Designed and implemented SafeU, an Android app for emergency response that increased user safety and responsiveness by 30%.</li>
-            <li class="list">Developed an automated SOS alert system with real-time location sharing, decreasing emergency response time by 40%.</li>
-            <li class="list">Integrated Google Maps API to enable live location sharing at intervals of 3, 5, or 10 minutes.</li>
-            <li class="list">Tools used: Java, Android Studio, Google Maps API, Figma.</li>
-          </ul>
-        </li>
-      </ul>
+        <div class="project-card">
+          <i class="far fa-folder folder-icon"></i></i>
+          <h4 class="project-name">Glacier Visualization</h4>
+          <p class="project-tools">ParaView, Python, FFmpeg</p>
+          <p class="project-desc">Visualized glacier data over decades using 3D rendering. Integrated time-varying data to analyze climate impacts with detailed models and trends.</p>
+        </div>
+    
+        <div class="project-card">
+          <!-- <i class="far fa-folder folder-icon"></i></i> -->
+            <a href="https://github.com/dataviscourse2024/group-project-visual-visionaries.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          <h4 class="project-name">Job Market Visual Analytics Tool</h4>
+          <p class="project-tools">D3.js, JavaScript, HTML/CSS</p>
+          <p class="project-desc">Created interactive visualizations of job saturation and salary data using D3. Included filtering by major, location, and academic year.</p>
+        </div>
+    
+        <div class="project-card">
+          <!-- <i class="far fa-folder folder-icon"></i></i> -->
+            <a href="https://github.com/gracelewiss/my-portfolio.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          <h4 class="project-name">My Portfolio Website</h4>
+          <p class="project-tools">JavaScript, HTML, CSS, Netlify</p>
+          <p class="project-desc">Deployed a responsive portfolio with animated fractal trees and smooth section transitions. Includes audio controls and modern styling.</p>
+        </div>
+    
+        <div class="project-card">
+          <!-- <i class="far fa-folder folder-icon"></i></i> -->
+            <a href="https://github.com/gracelewiss/FortiShare_BE.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          <h4 class="project-name">FortiShare</h4>
+          <p class="project-tools">MongoDB GridFS, Python, NodeJS</p>
+          <p class="project-desc">Built a secure file-sharing system with AES/RSA encryption and CNN-based XSS detection. Optimized large file transfers and built a smooth UI.</p>
+        </div>
+    
+        <div class="project-card">
+          <!-- <i class="far fa-folder folder-icon"></i></i> -->
+            <a href="https://github.com/gracelewiss/python-code-analyzer-extension.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          <h4 class="project-name">Static Code Analyzer</h4>
+          <p class="project-tools">TypeScript, Node.js, Python, VS Code API</p>
+          <p class="project-desc">Created a VS Code extension for Python analysis with diagnostics, auto-fixes, and squiggly line alerts. Published with custom branding.</p>
+        </div>
+    
+        <div class="project-card">
+          <!-- <i class="far fa-folder folder-icon"></i></i> -->
+            <a href="https://github.com/gracelewiss/SafeU_MiniProj.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
+          <h4 class="project-name">SafeU: SOS App</h4>
+          <p class="project-tools">Java, Android Studio, Google Maps API</p>
+          <p class="project-desc">Designed an emergency response app with real-time location sharing. Added automated SOS alerts and map-based tracking.</p>
+        </div>
+    
+      </div>
     </section>
     
 

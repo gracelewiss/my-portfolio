@@ -246,4 +246,68 @@ section {
     font-weight: 600;
     color: #64FFDA;
   }
+
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #CCD6F6;
+    text-align: left;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .project-card {
+    background-color: #112240;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #64FFDA;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-tools {
+    font-size: 0.95rem;
+    color: #A8B2D1;
+    margin-bottom: 1rem;
+  }
+  
+  .project-desc {
+    font-size: 1rem;
+    color: #CCD6F6;
+    line-height: 1.6;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .folder-icon,
+  .github-icon {
+    font-size: 1.6rem; /* Bigger size */
+    color: #64FFDA;    /* Green accent */
+    transition: transform 0.3s ease;
+  }
+  
+  .github-icon:hover,
+  .folder-icon:hover {
+    transform: scale(1.15);
+  }
   
