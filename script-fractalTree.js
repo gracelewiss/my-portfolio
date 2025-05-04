@@ -1,6 +1,6 @@
   var angle;
   var theta = 0,
-    frms = 580,
+    frms = 780,
     c = 100;
   
   var canvas = document.getElementById('fractalTree');
@@ -24,11 +24,11 @@
     angle = map(Math.sin(theta), -1, 1, 0, Math.PI / 2);
   
     ctx.save(); // Save the current drawing context state
-    ctx.translate(canvas.width / 2, canvas.height - 100); // Move to the center-bottom
+    ctx.translate(canvas.width / 2, canvas.height - 10); // Move to the center-bottom
   
     ctx.strokeStyle = 'white';
     ctx.lineWidth = 2;
-    branch(60, 1); // Start drawing the tree
+    branch(100, 1); // Start drawing the tree
   
     ctx.restore(); // Restore the drawing context to avoid transformations affecting other drawings
   

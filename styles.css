@@ -69,7 +69,6 @@ main {
     transform: scale(1.1);
 }
 
-/* Typing Animation */
 .typing-animation {
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
@@ -80,7 +79,7 @@ main {
     border-right: 3px solid #64FFDA;
     animation: typing 3.5s steps(20) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
     text-align: center;
-    margin-top: -50px; /* Adjusted spacing */
+    margin-top: -5px; /* Adjusted spacing */
 }
 
 .typing-animation span {

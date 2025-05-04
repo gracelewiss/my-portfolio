@@ -67,7 +67,7 @@
             <div class="about-text">
                 <h3>/about me</h3>
                 <p>
-                    I am currently pursuing a <span class="bold-text">Master's of Science</span> in <span class="bold-text"> Computer Science</span> at <span class="highlight">the University of Utah</span>.  I am passionate about  <span class="bold-text">Data Analytics</span>,  <span class="bold-text">Data Visualization</span>, and the ability to transform complex datasets into actionable insights.
+                  I am currently pursuing a <span class="bold-text">Master's of Science</span> in <span class="bold-text"> Computer Science</span> at <span class="bold-text highlight">the University of Utah</span>. I am passionate about <span class="bold-text">Data Analytics</span> and <span class="bold-text">Data Visualization</span>. I enjoy using data to solve real problems and drive smarter decisions. I’m also deeply committed to <span class="bold-text">empowering women in tech</span> and actively support initiatives that foster diversity and inclusion in the field.
                 </p>
                 <p>Here are some technologies I have currently been working with:</p>
                 <ul class="tech-list">
@@ -75,8 +75,6 @@
                     <li class="tech-item">SQL</li>
                     <li class="tech-item">Tableau</li>
                     <li class="tech-item">ParaView</li>
-                    <li class="tech-item">React.js</li>
-                    <li class="tech-item">Java</li>
                     <li class="tech-item">JavaScript</li>
                     <li class="tech-item">D3.js</li>
                 </ul>
@@ -88,19 +86,110 @@
         </div>
     </section>
     
-
     <section id="experience" class="fade-in">
       <h3>/experience</h3>
-      <ul>
-        <li><strong><span class="bold-text">Project Development Engineer Intern</span> <span class="highlight">@ ITECH DIGITAL FORENSICS</span></strong>
-        <li> June 2022 - August 2022 </li>
-          <ul>
-            <li class="list">Contributed to the development of cutting-edge digital forensics solutions, optimizing data security protocols for clients.</li>
-            <li class="list">Collaborated with cross-functional teams to design and implement digital evidence collection tools that reduced analysis time by 25%.</li>
-            <li class="list">Enhanced software tools using Python, improving their efficiency by automating manual tasks and integrating machine learning algorithms.</li>
+      <div class="experience-container">
+        <div class="experience-tabs">
+          <ul id="experience-tab-list">
+            <li onclick="showExperience('wic', this)" class="active">WIC</li>
+            <li onclick="showExperience('utech', this)">UNIVERSITY OF UTAH</li>
+            <li onclick="showExperience('acm', this)">ACM</li>
+            <li onclick="showExperience('teknack', this)">TEKNACK</li>
+            <li onclick="showExperience('sports', this)">UNIVERSITY OF MUMBAI -DBIT</li>
+            <li onclick="showExperience('itech', this)">ITECH</li> 
+            <li onclick="showExperience('grss', this)">IEEE GRSS</li>
+            <li onclick="showExperience('girls4impact', this)">GIRLS4IMPACT</li> 
           </ul>
-        </li>
-      </ul>
+        </div>
+        <div class="experience-details">
+          <div id="wic" class="experience-content">
+            <h4>Graduate Officer <span class="highlight">@ Women in Computing, University of Utah</span></h4>
+            <p class="date">May 2025 - Present</p>
+            <ul>
+              <li class="list">Support community and advocacy efforts promoting women in technology on campus.</li>
+              <li class="list">Help coordinate events, workshops, and mentorship initiatives for the WiC community.</li>
+            </ul>
+          </div>
+          <div id="utech" class="experience-content" style="display:none;">
+            <h4>Utech Sales & Service Associate <span class="highlight">@ University of Utah Campus Store</span></h4>
+            <p class="date">September 2024 - Present</p>
+            <ul>
+              <li class="list">Support customers in selecting tech products and accessories. Apple-certified in sales to provide informed and trusted guidance.</li>
+              <li class="list">Diagnose and repair devices, including Macs, PCs, iPads, and iPhones. Use Apple’s GSX system for service workflow, parts management, and repair resources. Track repairs and communicate with customers through RepairShopr.</li>
+              <li class="list">Use Zoho CRM and NetSuite to manage customer orders, inventory, and sales operations. Leverage Excel for inventory tracking and operational reporting.</li>
+            </ul>
+          </div>
+          <div id="acm" class="experience-content" style="display:none;">
+            <h4>Core Member <span class="highlight">@ Association for Computing Machinery</span></h4>
+            <div class="experience-subsection">
+              <h5>Advisor</h5>
+              <p class="date">Jun 2023 - May 2024</p>
+              <ul>
+                <li class="list">Mentored Committee Heads, Led strategic planning and reviewed chapter reports and event data.</li>
+              </ul>
+            </div>
+          
+            <div class="experience-subsection">
+              <h5>Secretary</h5>
+              <p class="date">May 2022 - Jun 2023</p>
+              <ul>
+                <li class="list">Managed official communications, organized workshops, and secured ₹90K+ in sponsorships.</li>
+              </ul>
+            </div>
+          
+            <div class="experience-subsection">
+              <h5>Administrative Head</h5>
+              <p class="date">Sep 2021 - May 2022</p>
+              <ul>
+                <li class="list">Coordinated 20+ events and tracked participation and engagement data.</li>
+              </ul>
+            </div>
+          </div>
+          <div id="teknack" class="experience-content" style="display:none;">
+            <h4>Game Development Mentor & Organizer <span class="highlight">@ Teknack Gaming Studio</span></h4>
+            <p class="date">Oct 2021 - Feb 2024</p>
+            <ul>
+              <li class="list">Mentored students in Unity & Unreal Engine. </li>
+                <li class="list">Published 60+ student games on Google Play Store over three years.</li>
+              <li class="list">Secured ₹100K+ in sponsorships and organized three public game exhibitions.</li>
+            </ul>
+          </div>
+          <div id="sports" class="experience-content" style="display:none;">
+            <h4>Sports Secretary <span class="highlight">@ Student Council</span></h4>
+            <p class="date">Oct 2022 - Jun 2023</p>
+            <ul>
+              <li class="list">Managed events held by the student council (800+ attendees) and coordinated sports events.</li>
+              <li class="list">Raised ₹40K+ INR sponsorships.</li>
+              <li class="list">Acted as liaison for student athletes and managed their data.</li>
+            </ul>
+          </div>
+          <div id="itech" class="experience-content" style="display:none;">
+            <h4>Project Development Engineer Intern <span class="highlight">@ ITECH Digital Forensics</span></h4>
+            <p class="date">June 2022 - August 2022</p>
+            <ul>
+              <li class="list">Contributed to AWS migration, website development, and internal reporting workflows.</li>
+              <li class="list">Enhanced platform infrastructure by supporting digital forensics tool integration.</li>
+              <li class="list">Automated manual workflows using Python and improved data handling processes.</li>
+            </ul>
+          </div>
+          <div id="grss" class="experience-content" style="display:none;">
+            <h4>STEM Event Organizer <span class="highlight">@ IEEE Geoscience and Remote Sensing Society</span></h4>
+            <p class="date">Dec 2021 - Jul 2022</p>
+            <ul>
+              <li class="list">Organized a Short Term Training Program on "Geospatial Big Data Analytics" by the IEEE-GRSS Bombay Chapter.</li>
+              <li class="list">Organized the "Symposium on Geospatial Intelligence" by the IEEE-GRSS Bombay Chapter.</li>
+            </ul>
+          </div>
+          <div id="girls4impact" class="experience-content" style="display:none;">
+            <h4>Teaching Assistant <span class="highlight">@ Girls4Impact</span></h4>
+            <p class="date">Oct 2021 - Jan 2022</p>
+            <ul>
+              <li class="list">Taught Python programming fundamentals to underprivileged school girls.</li>
+              <li class="list">Contributed to community tech education and mentorship efforts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     
     <section id="projects" class="fade-in">
@@ -109,7 +198,9 @@
     
         <div class="project-card">
           <div class="card-icons">
-            <i class="far fa-folder folder-icon"></i></i>
+            <a href="https://github.com/ZacheyMIX/IHCS.git" target="_blank">
+              <i class="fab fa-github github-icon"></i>
+            </a>
           </div>
           <h4 class="project-name">Integrated Hybrid Cleaning System (IHCS)</h4>
           <p class="project-tools">Python, MLN, Tuffy, PostgreSQL</p>
@@ -125,7 +216,6 @@
         </div>
     
         <div class="project-card">
-          <!-- <i class="far fa-folder folder-icon"></i></i> -->
             <a href="https://github.com/dataviscourse2024/group-project-visual-visionaries.git" target="_blank">
               <i class="fab fa-github github-icon"></i>
             </a>
@@ -135,7 +225,6 @@
         </div>
     
         <div class="project-card">
-          <!-- <i class="far fa-folder folder-icon"></i></i> -->
             <a href="https://github.com/gracelewiss/my-portfolio.git" target="_blank">
               <i class="fab fa-github github-icon"></i>
             </a>
@@ -145,7 +234,6 @@
         </div>
     
         <div class="project-card">
-          <!-- <i class="far fa-folder folder-icon"></i></i> -->
             <a href="https://github.com/gracelewiss/FortiShare_BE.git" target="_blank">
               <i class="fab fa-github github-icon"></i>
             </a>
@@ -155,7 +243,6 @@
         </div>
     
         <div class="project-card">
-          <!-- <i class="far fa-folder folder-icon"></i></i> -->
             <a href="https://github.com/gracelewiss/python-code-analyzer-extension.git" target="_blank">
               <i class="fab fa-github github-icon"></i>
             </a>
@@ -165,7 +252,6 @@
         </div>
     
         <div class="project-card">
-          <!-- <i class="far fa-folder folder-icon"></i></i> -->
             <a href="https://github.com/gracelewiss/SafeU_MiniProj.git" target="_blank">
               <i class="fab fa-github github-icon"></i>
             </a>
@@ -176,7 +262,6 @@
     
       </div>
     </section>
-    
 
     <section id="skills" class="fade-in">
       <h3>/skills</h3>
