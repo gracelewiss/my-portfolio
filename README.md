@@ -4,7 +4,7 @@ This is my personal portfolio website, built with **JavaScript**, **HTML**, and 
 
 ## Features
 - **Fractal Tree Animation**: A recursive branching algorithm used to generate a fractal tree effect on the landing page.
-- **Sections**: Home, About, Experience, Projects, and Contact Details.
+- **Sections**: Home, About, Experience, Projects, Resume, and Quotes.
 - **Deployed on Netlify**: Fast and reliable hosting.
 
 ## Technologies Used
