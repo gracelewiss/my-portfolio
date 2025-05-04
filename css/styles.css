@@ -300,8 +300,8 @@ section {
   
   .folder-icon,
   .github-icon {
-    font-size: 1.6rem; /* Bigger size */
-    color: #64FFDA;    /* Green accent */
+    font-size: 1.6rem; 
+    color: #64FFDA;   
     transition: transform 0.3s ease;
   }
   
@@ -310,3 +310,108 @@ section {
     transform: scale(1.15);
   }
   
+/* ------------------ MOBILE RESPONSIVENESS ------------------ */ 
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  body,
+  main,
+  section,
+  .home-section,
+  #about,
+  #quotes {
+    padding: 2rem 1.2rem !important;
+  }
+
+  .typing-animation {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .header-left a {
+    display: none;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-tabs {
+    overflow-x: auto;
+    width: 100%;
+    -ms-overflow-style: none; /* IE & Edge */
+    scrollbar-width: none;    /* Firefox */
+    border-bottom: 2px solid #233554; 
+  }
+  
+  .experience-tabs::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .experience-tabs ul {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+
+  .experience-tabs li {
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .experience-tabs li.active {
+    border-bottom: 2px solid #64FFDA;
+    background-color: transparent;
+  }
+
+  .resume-container a {
+    padding: 0 2rem;
+  }
+
+  .card-icons {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .project-title,
+  #experience h3,
+  #projects h3,
+  #quotes h3 {
+    font-size: 1.6rem;
+  }
+
+
+}

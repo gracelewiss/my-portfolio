@@ -1,6 +1,6 @@
   var angle;
   var theta = 0,
-    frms = 780,
+    frms = 700,
     c = 100;
   
   var canvas = document.getElementById('fractalTree');
