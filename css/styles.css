@@ -1,0 +1,312 @@
+html {
+    scroll-padding-top: 120px; /* adjust based on your header height */
+  }
+  
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0A192F;
+    color: #CCD6F6;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    padding: 3rem 5rem;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(10, 25, 47, 0.9); /* Added slight transparency for better UI */
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+
+
+/* Navigation Styling */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h1 {
+    color: #CCD6F6;
+    margin-right: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.header-left a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #CCD6F6;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-left a:hover {
+    color: #64FFDA;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-left: 1rem;
+    color: #CCD6F6;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #64FFDA;
+    transform: scale(1.1);
+}
+
+.typing-animation {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #64FFDA;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #64FFDA;
+    animation: typing 3.5s steps(20) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
+    text-align: center;
+    margin-top: -5px; /* Adjusted spacing */
+}
+
+.typing-animation span {
+    color: #CCD6F6;
+}
+
+.typing-animation .name {
+    color: #64FFDA;
+}
+
+/* Keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 16ch;
+    }
+}
+
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 5rem;
+}
+
+
+.home-section {
+    text-align: center;
+    padding: 50px 5rem
+}
+
+#fractalTree {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1 !important;
+    pointer-events: none !important;
+  }
+  
+  .animation-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+
+
+/* Bounce Effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Description Text */
+.description {
+    color: #8892B0;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Resume Section */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.pdf-icon {
+    font-size: 4rem;
+    color: #64FFDA;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pdf-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Bold Text */
+.bold-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #A8B2D1;
+    transition: color 0.3s ease-in-out;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.bold-text:hover {
+    color: #64FFDA;
+}
+
+/* Resume Link */
+.resume-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5rem;
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    color: #64FFDA;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resume-container a:hover {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
+#quotes {
+    margin-top: 2rem;
+    padding: 3rem 5rem;
+  }
+  
+  #quotes h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #CCD6F6;
+  }
+  
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .quote-card {
+    border-left: 3px solid #64FFDA;
+    padding-left: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: translateX(5px);
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #A8B2D1;
+  }
+  
+  .quote-author {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64FFDA;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #CCD6F6;
+    text-align: left;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .project-card {
+    background-color: #112240;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #64FFDA;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-tools {
+    font-size: 0.95rem;
+    color: #A8B2D1;
+    margin-bottom: 1rem;
+  }
+  
+  .project-desc {
+    font-size: 1rem;
+    color: #CCD6F6;
+    line-height: 1.6;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .folder-icon,
+  .github-icon {
+    font-size: 1.6rem; /* Bigger size */
+    color: #64FFDA;    /* Green accent */
+    transition: transform 0.3s ease;
+  }
+  
+  .github-icon:hover,
+  .folder-icon:hover {
+    transform: scale(1.15);
+  }
+  
