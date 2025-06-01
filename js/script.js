@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const firstTab = document.querySelector('#experience-tab-list li');
   if (firstTab) {
-    showExperience('wic', firstTab);
+    showExperience('uta', firstTab);
   }
   
   window.showExperience = showExperience;
