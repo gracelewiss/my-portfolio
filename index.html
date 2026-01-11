@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/styles-about.css">
   <link rel="stylesheet" href="css/styles-project.css">
   <link rel="stylesheet" href="css/styles-experience.css">
+  <link rel="stylesheet" href="css/styles-leadership.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -24,10 +25,12 @@
   
   <header class="header">
     <div class="header-left">
-      <h1>Grace Lewis</h1>
-      <a href="#home">home</a>
+      <h1 class="site-title">
+  <a href="#home">Grace Lewis</a>
+</h1>
       <a href="#about">about</a>
       <a href="#experience">experience</a>
+      <a href="#leadership">leadership</a>
       <a href="#projects">projects</a>
       <a href="#resume">resume</a>
       <a href="#quotes">quotes</a>
@@ -74,7 +77,7 @@
                     <li class="tech-item">T-SQL</li>
                     <li class="tech-item">Power BI</li>
                     <li class="tech-item">Tableau</li>
-                    <li class="tech-item">ParaView</li>
+                    <li class="tech-item">C#</li>
                     <li class="tech-item">JavaScript</li>
                 </ul>
                 <p>When I'm not working or studying, I enjoy playing basketball and going on hikes.</p>
@@ -90,37 +93,33 @@
       <div class="experience-container">
         <div class="experience-tabs">
           <ul id="experience-tab-list">
-            <li onclick="showExperience('uta', this)" class="active">UTA</li>
-            <li onclick="showExperience('wic', this)">WIC</li>
-            <li onclick="showExperience('utech', this)">UNIVERSITY OF UTAH</li>
-            <li onclick="showExperience('acm', this)">ACM</li>
-            <li onclick="showExperience('teknack', this)">TEKNACK</li>
-            <li onclick="showExperience('dbit', this)">UNIVERSITY OF MUMBAI - DBIT</li>
+            <li onclick="showExperience('uoua', this)" class="active">UOUA</li>
+            <li onclick="showExperience('uta', this)">UTA</li>
+            <li onclick="showExperience('utech', this)">UOFU</li>
             <li onclick="showExperience('itech', this)">ITECH</li> 
-            <li onclick="showExperience('ieee', this)">IEEE GRSS</li>
-            <li onclick="showExperience('girls4impact', this)">GIRLS4IMPACT</li> 
           </ul>
         </div>
 
         <div class="experience-details">
-          <div id="uta" class="experience-content">
-            <h4>Data Reporting & Analytics Intern <span class="highlight">@ Utah Transit Authority</span></h4>
-            <p class="date">May 2025 - Present</p>
+          <div id="uoua" class="experience-content">
+            <h4>Sports Science & Analytics Intern <span class="highlight">@ University of Utah Athletics</span></h4>
+            <p class="date">January 2026 - Present</p>
+            <ul>
+            <li class="list">Analyze athlete performance and injury risk using technologies including VALD ForceDecks, VALD NorBord, and Catapult.</li>
+            <li class="list">Manage, process, and analyze athlete data across performance monitoring software and databases.</li>
+            <li class="list">Produce data-driven reports and presentations translating complex insights for coaches and athletic stakeholders.</li>
+          </ul>
+          </div>
+
+          <div id="uta" class="experience-content" style="display:none;">
+            <h4>Data Engineer Intern <span class="highlight">@ Utah Transit Authority</span></h4>
+            <p class="date">May 2025 - December 2025</p>
             <ul>
             <li class="list">Develop reports and dashboards using SSRS and Power BI based on business requirements gathered from team meetings and supervisor guidance.</li>
             <li class="list">Write, test, and optimize T-SQL queries, views, and stored procedures to support data access and reporting functionality.</li>
             <li class="list">Assist in designing and debugging ETL workflows using Microsoft SSIS and contribute to documentation of the data flow process.</li>
             <li class="list">Understand and design DOS and ERDs (Entity Relationship Diagrams) to map and communicate data structures and operational workflows.</li>
           </ul>
-          </div>
-
-          <div id="wic" class="experience-content">
-            <h4>Graduate Officer <span class="highlight" >@ Women in Computing, University of Utah</span></h4>
-            <p class="date">May 2025 - Present</p>
-            <ul>
-              <li class="list">Support community and advocacy efforts promoting women in technology on campus.</li>
-              <li class="list">Help coordinate events, workshops, and mentorship initiatives for the WiC community.</li>
-            </ul>
           </div>
 
           <div id="utech" class="experience-content" style="display:none;">
@@ -133,9 +132,45 @@
             </ul>
           </div>
 
-          <div id="acm" class="experience-content" style="display:none;">
+          <div id="itech" class="experience-content" style="display:none;">
+            <h4>ProjectEngineer Intern <span class="highlight">@ ITECH Digital Forensics</span></h4>
+            <p class="date">June 2022 - August 2022</p>
+            <ul>
+              <li class="list">Contributed to AWS migration, website development, and internal reporting workflows.</li>
+              <li class="list">Enhanced platform infrastructure by supporting digital forensics tool integration.</li>
+              <li class="list">Automated manual workflows using Python and improved data handling processes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="leadership" class="fade-in">
+      <h3>/leadership & volunteering</h3>
+      <div class="leadership-container">
+        <div class="leadership-tabs">
+          <ul id="leadership-tab-list">
+            <li onclick="showLeadership('wic', this)" class="active">WIC</li>
+            <li onclick="showLeadership('acm', this)">ACM</li>
+            <li onclick="showLeadership('teknack', this)">TEKNACK</li>
+            <li onclick="showLeadership('dbit', this)">UOM</li>
+            <li onclick="showLeadership('ieee', this)">IEEE GRSS</li>
+            <li onclick="showLeadership('girls4impact', this)">GIRLS4IMPACT</li> 
+          </ul>
+        </div>
+
+          <div id="wic" class="leadership-content">
+            <h4>Graduate Officer <span class="highlight" >@ Women in Computing, University of Utah</span></h4>
+            <p class="date">May 2025 - Present</p>
+            <ul>
+              <li class="list">Support community and advocacy efforts promoting women in technology on campus.</li>
+              <li class="list">Help coordinate events, workshops, and mentorship initiatives for the WiC community.</li>
+            </ul>
+          </div>
+
+          <div id="acm" class="leadership-content" style="display:none;">
             <h4>Core Member <span class="highlight">@ Association for Computing Machinery</span></h4>
-            <div class="experience-subsection">
+            <div class="leadership-subsection">
               <h5>Advisor</h5>
               <p class="date">Jun 2023 - May 2024</p>
               <ul>
@@ -143,7 +178,7 @@
               </ul>
             </div>
           
-            <div class="experience-subsection">
+            <div class="leadership-subsection">
               <h5>Secretary</h5>
               <p class="date">May 2022 - Jun 2023</p>
               <ul>
@@ -151,7 +186,7 @@
               </ul>
             </div>
           
-            <div class="experience-subsection">
+            <div class="leadership-subsection">
               <h5>Administrative Head</h5>
               <p class="date">Sep 2021 - May 2022</p>
               <ul>
@@ -160,7 +195,7 @@
             </div>
           </div>
 
-          <div id="teknack" class="experience-content" style="display:none;">
+          <div id="teknack" class="leadership-content" style="display:none;">
             <h4>Game Development Mentor & Organizer <span class="highlight">@ Teknack Gaming Studio</span></h4>
             <p class="date">Oct 2021 - Feb 2024</p>
             <ul>
@@ -170,8 +205,8 @@
             </ul>
           </div>
 
-          <div id="dbit" class="experience-content" style="display:none;">
-            <h4>Sports Secretary <span class="highlight">@ Student Council</span></h4>
+          <div id="dbit" class="leadership-content" style="display:none;">
+            <h4>Sports Secretary <span class="highlight">@ Student Council, University of Mumbai</span></h4>
             <p class="date">Oct 2022 - Jun 2023</p>
             <ul>
               <li class="list">Managed events held by the student council (800+ attendees) and coordinated sports events.</li>
@@ -180,17 +215,7 @@
             </ul>
           </div>
 
-          <div id="itech" class="experience-content" style="display:none;">
-            <h4>Project Development Engineer Intern <span class="highlight">@ ITECH Digital Forensics</span></h4>
-            <p class="date">June 2022 - August 2022</p>
-            <ul>
-              <li class="list">Contributed to AWS migration, website development, and internal reporting workflows.</li>
-              <li class="list">Enhanced platform infrastructure by supporting digital forensics tool integration.</li>
-              <li class="list">Automated manual workflows using Python and improved data handling processes.</li>
-            </ul>
-          </div>
-
-          <div id="ieee" class="experience-content" style="display:none;">
+          <div id="ieee" class="leadership-content" style="display:none;">
             <h4>STEM Event Organizer <span class="highlight">@ IEEE Geoscience and Remote Sensing Society</span></h4>
             <p class="date">Dec 2021 - Jul 2022</p>
             <ul>
@@ -199,7 +224,7 @@
             </ul>
           </div>
 
-          <div id="girls4impact" class="experience-content" style="display:none;">
+          <div id="girls4impact" class="leadership-content" style="display:none;">
             <h4>Teaching Assistant <span class="highlight">@ Girls4Impact</span></h4>
             <p class="date">Oct 2021 - Jan 2022</p>
             <ul>
@@ -210,7 +235,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="projects" class="fade-in">
       <h3 class="project-title">/projects</h3>
       <div class="project-grid">
@@ -295,7 +320,7 @@
       <section id="resume" class="fade-in">
         <h3 class="resume-title">/resume</h3>
         <div class="resume-container">
-            <a href="https://drive.google.com/file/d/1DzNYym74DoIKW3vYaOaMmW43L1s4C1bE/view?usp=sharing" class="pdf-icon">
+            <a href="https://drive.google.com/file/d/19H7nj6ATjyDvJQbTQr1_G9Aw18Tlnxzm/view?usp=drive_link" class="pdf-icon">
                 <i class="fa-solid fa-file-pdf"></i>
             </a>
             <span class="bold-text">Click the PDF to view my resume</span>

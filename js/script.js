@@ -77,21 +77,72 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Experience tab logic
-  function showExperience(id, element) {
-    const contents = document.querySelectorAll('.experience-content');
-    contents.forEach(content => content.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
 
-    const tabs = document.querySelectorAll('#experience-tab-list li');
-    tabs.forEach(tab => tab.classList.remove('active'));
-    if (element) element.classList.add('active');
+  function showExperience(contentId, tabEl) {
+    const section = document.getElementById("experience");
+    if (!section) return;
+
+    // hide only experience panels inside experience section
+    section.querySelectorAll(".experience-content").forEach(panel => {
+      panel.style.display = "none";
+    });
+
+    // remove active only from experience tabs
+    section.querySelectorAll(".experience-tabs li").forEach(tab => {
+      tab.classList.remove("active");
+    });
+
+    // show selected
+    const selected = section.querySelector(`#${contentId}`);
+    if (selected) selected.style.display = "block";
+
+    // mark active
+    if (tabEl) tabEl.classList.add("active");
   }
 
-  const firstTab = document.querySelector('#experience-tab-list li');
-  if (firstTab) {
-    showExperience('uta', firstTab);
+  const expSection = document.getElementById("experience");
+  if (expSection) {
+    const activeExpTab =
+      expSection.querySelector(".experience-tabs li.active") ||
+      expSection.querySelector(".experience-tabs li");
+
+    if (activeExpTab) {
+      showExperience("uoua", activeExpTab);
+    }
   }
-  
+
   window.showExperience = showExperience;
+
+  function showLeadership(contentId, tabEl) {
+    const section = document.getElementById("leadership");
+    if (!section) return;
+
+    section.querySelectorAll(".leadership-content").forEach(panel => {
+      panel.style.display = "none";
+    });
+
+    section.querySelectorAll(".leadership-tabs li").forEach(tab => {
+      tab.classList.remove("active");
+    });
+
+    const selected = section.querySelector(`#${contentId}`);
+    if (selected) selected.style.display = "block";
+
+    if (tabEl) tabEl.classList.add("active");
+  }
+
+
+  const leadSection = document.getElementById("leadership");
+  if (leadSection) {
+   const activeLeadTab =
+      leadSection.querySelector(".leadership-tabs li.active") ||
+      leadSection.querySelector(".leadership-tabs li");
+
+    if (activeLeadTab) {
+      showLeadership("wic", activeLeadTab);
+    }
+  }
+
+  window.showLeadership = showLeadership;
 });
 
